@@ -523,7 +523,7 @@
             this.pnl_icbs.Controls.Add(this.label8);
             this.pnl_icbs.Location = new System.Drawing.Point(628, 35);
             this.pnl_icbs.Name = "pnl_icbs";
-            this.pnl_icbs.Size = new System.Drawing.Size(565, 726);
+            this.pnl_icbs.Size = new System.Drawing.Size(566, 726);
             this.pnl_icbs.TabIndex = 16;
             // 
             // label24
