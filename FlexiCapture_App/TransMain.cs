@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Configuration;
+using System.Threading;
 
 namespace FlexiCapture_App
 {
@@ -24,7 +25,9 @@ namespace FlexiCapture_App
            
             pnl_config.Hide();
             pnl_info.Hide();
-            pnl_main.Show();
+            pnl_main.Hide();
+            pnl_info_icbs.Hide();
+            pnl_config_icbs.Hide();
 
            
         }
@@ -305,9 +308,38 @@ namespace FlexiCapture_App
 
         private void performMatchingToolStripMenuItem_Click(object sender, EventArgs e)
         {
+         
             ScanForm sf = new ScanForm();
             sf.Show();
-            this.CenterToScreen();
+        }
+
+        private void importFromScannedTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Impt_ScanTran st = new Impt_ScanTran();
+            st.Show();
+        }
+
+        private void importFromICBSTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Impt_ICBSTran it = new Impt_ICBSTran();
+            it.Show();
+        }
+
+        private void TransMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewImportedRecordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnl_main.Show();
+            pnl_icbs.Show();
+
+        }
+
+        private void ConfigToolStrip_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -86,6 +86,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Impt_ICBSTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impt_ICBSTran.Designer.cs">
+      <DependentUpon>Impt_ICBSTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impt_ScanTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impt_ScanTran.Designer.cs">
+      <DependentUpon>Impt_ScanTran.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +105,7 @@
       <DependentUpon>TransMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Progress_Bar.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Progress_Bar.cs" />
     <Compile Include="Progress_Bar.Designer.cs">
       <DependentUpon>Progress_Bar.cs</DependentUpon>
     </Compile>
@@ -106,6 +116,16 @@
     <Compile Include="ScanForm.Designer.cs">
       <DependentUpon>ScanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unmatched_View.cs" />
+    <Compile Include="Unmatched_View.Designer.cs">
+      <DependentUpon>Unmatched_View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Impt_ICBSTran.resx">
+      <DependentUpon>Impt_ICBSTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impt_ScanTran.resx">
+      <DependentUpon>Impt_ScanTran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransMain.resx">
       <DependentUpon>TransMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="ScanForm.resx">
       <DependentUpon>ScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unmatched_View.resx">
+      <DependentUpon>Unmatched_View.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
