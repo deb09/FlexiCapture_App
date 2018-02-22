@@ -16,7 +16,7 @@ namespace FlexiCapture_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Customer_Information());
+            Application.Run(new TransMain());
         }
     }
 }

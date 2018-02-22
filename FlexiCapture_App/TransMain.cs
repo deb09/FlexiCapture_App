@@ -13,10 +13,10 @@ using System.Configuration;
 namespace FlexiCapture_App
 {
 
-    public partial class Customer_Information : Form
+    public partial class TransMain : Form
     {
 
-        public Customer_Information()
+        public TransMain()
         {
             InitializeComponent();
             
@@ -301,6 +301,13 @@ namespace FlexiCapture_App
         private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void performMatchingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ScanForm sf = new ScanForm();
+            sf.Show();
+            this.CenterToScreen();
         }
     }
 }

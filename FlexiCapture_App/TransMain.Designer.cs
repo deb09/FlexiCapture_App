@@ -1,6 +1,6 @@
 ﻿namespace FlexiCapture_App
 {
-    partial class Customer_Information
+    partial class TransMain
     {
         /// <summary>
         /// Required designer variable.
@@ -499,6 +499,7 @@
             this.performMatchingToolStripMenuItem.Name = "performMatchingToolStripMenuItem";
             this.performMatchingToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.performMatchingToolStripMenuItem.Text = "Perform Matching";
+            this.performMatchingToolStripMenuItem.Click += new System.EventHandler(this.performMatchingToolStripMenuItem_Click);
             // 
             // matchedTransactionsToolStripMenuItem
             // 
@@ -824,7 +825,7 @@
             // 
             this.openfile_browse_icbs.FileName = "openFileDialog1";
             // 
-            // Customer_Information
+            // TransMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -836,7 +837,7 @@
             this.Controls.Add(this.pnl_main);
             this.Controls.Add(this.pnl_config);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Customer_Information";
+            this.Name = "TransMain";
             this.Text = "Vouching Transactions Management System";
             this.pnl_config.ResumeLayout(false);
             this.pnl_config.PerformLayout();
