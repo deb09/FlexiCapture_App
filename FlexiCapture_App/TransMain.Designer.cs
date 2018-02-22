@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.pnl_config = new System.Windows.Forms.Panel();
+            this.btn_browse = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_table_name = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_ok = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_data_source = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnl_main = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -56,11 +65,12 @@
             this.fileToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importFromScannedTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importFromICBSTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewImportedRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performMatchingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchedTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unmatchedTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromScannedTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromICBSTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_icbs = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.pnl_info_icbs = new System.Windows.Forms.Panel();
@@ -94,16 +104,6 @@
             this.tb_data_source_icbs = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.openfile_browse_icbs = new System.Windows.Forms.OpenFileDialog();
-            this.btn_browse = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_table_name = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btn_ok = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_data_source = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.viewImportedRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_config.SuspendLayout();
             this.pnl_main.SuspendLayout();
             this.pnl_info.SuspendLayout();
@@ -128,6 +128,85 @@
             this.pnl_config.Name = "pnl_config";
             this.pnl_config.Size = new System.Drawing.Size(498, 352);
             this.pnl_config.TabIndex = 2;
+            // 
+            // btn_browse
+            // 
+            this.btn_browse.Location = new System.Drawing.Point(366, 159);
+            this.btn_browse.Name = "btn_browse";
+            this.btn_browse.Size = new System.Drawing.Size(83, 20);
+            this.btn_browse.TabIndex = 26;
+            this.btn_browse.Text = "Browse";
+            this.btn_browse.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 203);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(222, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Enter the Document Definition Project Name: ";
+            // 
+            // tb_table_name
+            // 
+            this.tb_table_name.Location = new System.Drawing.Point(189, 229);
+            this.tb_table_name.Name = "tb_table_name";
+            this.tb_table_name.Size = new System.Drawing.Size(171, 20);
+            this.tb_table_name.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(104, 232);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Project Name:";
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.Location = new System.Drawing.Point(228, 273);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(75, 23);
+            this.btn_ok.TabIndex = 22;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(104, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Data Source:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(223, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Enter the data source and/or location of data:";
+            // 
+            // tb_data_source
+            // 
+            this.tb_data_source.Location = new System.Drawing.Point(189, 159);
+            this.tb_data_source.Name = "tb_data_source";
+            this.tb_data_source.Size = new System.Drawing.Size(171, 20);
+            this.tb_data_source.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(120, 57);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(220, 26);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Setup Configuration";
             // 
             // pnl_main
             // 
@@ -384,26 +463,6 @@
             this.actionsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.actionsToolStripMenuItem.Text = "Actions";
             // 
-            // performMatchingToolStripMenuItem
-            // 
-            this.performMatchingToolStripMenuItem.Name = "performMatchingToolStripMenuItem";
-            this.performMatchingToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
-            this.performMatchingToolStripMenuItem.Text = "Perform Matching";
-            this.performMatchingToolStripMenuItem.Click += new System.EventHandler(this.performMatchingToolStripMenuItem_Click);
-            // 
-            // matchedTransactionsToolStripMenuItem
-            // 
-            this.matchedTransactionsToolStripMenuItem.Name = "matchedTransactionsToolStripMenuItem";
-            this.matchedTransactionsToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
-            this.matchedTransactionsToolStripMenuItem.Text = "View Matched Transactions";
-            this.matchedTransactionsToolStripMenuItem.Click += new System.EventHandler(this.matchedTransactionsToolStripMenuItem_Click);
-            // 
-            // unmatchedTransactionsToolStripMenuItem
-            // 
-            this.unmatchedTransactionsToolStripMenuItem.Name = "unmatchedTransactionsToolStripMenuItem";
-            this.unmatchedTransactionsToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
-            this.unmatchedTransactionsToolStripMenuItem.Text = "View Unmatched Transactions";
-            // 
             // importFromScannedTransactionsToolStripMenuItem
             // 
             this.importFromScannedTransactionsToolStripMenuItem.Name = "importFromScannedTransactionsToolStripMenuItem";
@@ -417,6 +476,34 @@
             this.importFromICBSTransactionsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.importFromICBSTransactionsToolStripMenuItem.Text = "Import ICBS Transactions";
             this.importFromICBSTransactionsToolStripMenuItem.Click += new System.EventHandler(this.importFromICBSTransactionsToolStripMenuItem_Click);
+            // 
+            // viewImportedRecordsToolStripMenuItem
+            // 
+            this.viewImportedRecordsToolStripMenuItem.Name = "viewImportedRecordsToolStripMenuItem";
+            this.viewImportedRecordsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.viewImportedRecordsToolStripMenuItem.Text = "View Imported Records";
+            this.viewImportedRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewImportedRecordsToolStripMenuItem_Click);
+            // 
+            // performMatchingToolStripMenuItem
+            // 
+            this.performMatchingToolStripMenuItem.Name = "performMatchingToolStripMenuItem";
+            this.performMatchingToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.performMatchingToolStripMenuItem.Text = "Perform Matching";
+            this.performMatchingToolStripMenuItem.Click += new System.EventHandler(this.performMatchingToolStripMenuItem_Click);
+            // 
+            // matchedTransactionsToolStripMenuItem
+            // 
+            this.matchedTransactionsToolStripMenuItem.Name = "matchedTransactionsToolStripMenuItem";
+            this.matchedTransactionsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.matchedTransactionsToolStripMenuItem.Text = "View Matched Transactions";
+            this.matchedTransactionsToolStripMenuItem.Click += new System.EventHandler(this.matchedTransactionsToolStripMenuItem_Click);
+            // 
+            // unmatchedTransactionsToolStripMenuItem
+            // 
+            this.unmatchedTransactionsToolStripMenuItem.Name = "unmatchedTransactionsToolStripMenuItem";
+            this.unmatchedTransactionsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.unmatchedTransactionsToolStripMenuItem.Text = "View Unmatched Transactions";
+            this.unmatchedTransactionsToolStripMenuItem.Click += new System.EventHandler(this.unmatchedTransactionsToolStripMenuItem_Click);
             // 
             // pnl_icbs
             // 
@@ -730,98 +817,12 @@
             // 
             this.openfile_browse_icbs.FileName = "openFileDialog1";
             // 
-            // btn_browse
-            // 
-            this.btn_browse.Location = new System.Drawing.Point(366, 159);
-            this.btn_browse.Name = "btn_browse";
-            this.btn_browse.Size = new System.Drawing.Size(83, 20);
-            this.btn_browse.TabIndex = 26;
-            this.btn_browse.Text = "Browse";
-            this.btn_browse.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 203);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(222, 13);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Enter the Document Definition Project Name: ";
-            // 
-            // tb_table_name
-            // 
-            this.tb_table_name.Location = new System.Drawing.Point(189, 229);
-            this.tb_table_name.Name = "tb_table_name";
-            this.tb_table_name.Size = new System.Drawing.Size(171, 20);
-            this.tb_table_name.TabIndex = 24;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(104, 232);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Project Name:";
-            // 
-            // btn_ok
-            // 
-            this.btn_ok.Location = new System.Drawing.Point(228, 273);
-            this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(75, 23);
-            this.btn_ok.TabIndex = 22;
-            this.btn_ok.Text = "OK";
-            this.btn_ok.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Data Source:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 13);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Enter the data source and/or location of data:";
-            // 
-            // tb_data_source
-            // 
-            this.tb_data_source.Location = new System.Drawing.Point(189, 159);
-            this.tb_data_source.Name = "tb_data_source";
-            this.tb_data_source.Size = new System.Drawing.Size(171, 20);
-            this.tb_data_source.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 57);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(220, 26);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Setup Configuration";
-            // 
-            // viewImportedRecordsToolStripMenuItem
-            // 
-            this.viewImportedRecordsToolStripMenuItem.Name = "viewImportedRecordsToolStripMenuItem";
-            this.viewImportedRecordsToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
-            this.viewImportedRecordsToolStripMenuItem.Text = "View Imported Records";
-            this.viewImportedRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewImportedRecordsToolStripMenuItem_Click);
-            // 
             // TransMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1251, 770);
+            this.ClientSize = new System.Drawing.Size(1251, 741);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnl_main);
             this.Controls.Add(this.pnl_config);

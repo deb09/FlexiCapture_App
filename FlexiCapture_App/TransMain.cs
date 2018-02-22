@@ -298,7 +298,8 @@ namespace FlexiCapture_App
 
         private void matchedTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Matched mv = new Matched();
+            mv.Show();
         }
 
         private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
@@ -340,6 +341,12 @@ namespace FlexiCapture_App
         private void ConfigToolStrip_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void unmatchedTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Unmatched_View uv = new Unmatched_View();
+            uv.Show();
         }
     }
 }

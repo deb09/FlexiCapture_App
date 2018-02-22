@@ -1,6 +1,6 @@
 ﻿namespace FlexiCapture_App
 {
-    partial class Unmatched_View
+    partial class Matched
     {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,6 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Unmatched_Icbs_Records
@@ -49,13 +48,12 @@
             this.Account_Number,
             this.Amount});
             this.Unmatched_Icbs_Records.FullRowSelect = true;
-            this.Unmatched_Icbs_Records.Location = new System.Drawing.Point(22, 23);
+            this.Unmatched_Icbs_Records.Location = new System.Drawing.Point(17, 17);
             this.Unmatched_Icbs_Records.Name = "Unmatched_Icbs_Records";
             this.Unmatched_Icbs_Records.Size = new System.Drawing.Size(584, 401);
-            this.Unmatched_Icbs_Records.TabIndex = 3;
+            this.Unmatched_Icbs_Records.TabIndex = 6;
             this.Unmatched_Icbs_Records.UseCompatibleStateImageBehavior = false;
             this.Unmatched_Icbs_Records.View = System.Windows.Forms.View.Details;
-            this.Unmatched_Icbs_Records.SelectedIndexChanged += new System.EventHandler(this.Unmatched_Icbs_Records_SelectedIndexChanged);
             // 
             // Date
             // 
@@ -85,13 +83,12 @@
             this.columnHeader4,
             this.columnHeader5});
             this.Unmatched_Trans_Records.FullRowSelect = true;
-            this.Unmatched_Trans_Records.Location = new System.Drawing.Point(655, 23);
+            this.Unmatched_Trans_Records.Location = new System.Drawing.Point(650, 17);
             this.Unmatched_Trans_Records.Name = "Unmatched_Trans_Records";
             this.Unmatched_Trans_Records.Size = new System.Drawing.Size(584, 401);
-            this.Unmatched_Trans_Records.TabIndex = 4;
+            this.Unmatched_Trans_Records.TabIndex = 7;
             this.Unmatched_Trans_Records.UseCompatibleStateImageBehavior = false;
             this.Unmatched_Trans_Records.View = System.Windows.Forms.View.Details;
-            this.Unmatched_Trans_Records.SelectedIndexChanged += new System.EventHandler(this.Unmatched_Trans_Records_SelectedIndexChanged);
             // 
             // columnHeader2
             // 
@@ -113,27 +110,15 @@
             this.columnHeader5.Text = "Amount";
             this.columnHeader5.Width = 100;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(576, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Verify";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Unmatched_View
+            // Matched
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 479);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Unmatched_Icbs_Records);
             this.Controls.Add(this.Unmatched_Trans_Records);
-            this.Name = "Unmatched_View";
-            this.Text = "Form1";
+            this.Name = "Matched";
+            this.Text = "Matched";
             this.ResumeLayout(false);
 
         }
@@ -150,6 +135,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.Button button1;
     }
 }
