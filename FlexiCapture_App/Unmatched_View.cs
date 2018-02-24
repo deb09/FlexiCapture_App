@@ -14,7 +14,8 @@ namespace FlexiCapture_App
     public partial class Unmatched_View : Form
     {
 
-        public static string acct_name = "";
+        public static string icbs_id = "";
+        public static string scan_id = "";
         public Unmatched_View()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace FlexiCapture_App
             
             try
             {
+
                 Unmatched_Data ud = new Unmatched_Data();
                 ud.txt_icbs_acct_name.Text = Unmatched_Icbs_Records.CheckedItems[0].SubItems[2].Text;
                 ud.txt_icbs_acct_num.Text = Unmatched_Icbs_Records.CheckedItems[0].SubItems[3].Text;
